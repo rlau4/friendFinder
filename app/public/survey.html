@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Star Wars - Express</title>
+    <title>Friend Finder Survey</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,42 +17,181 @@
     <h3>About You</h3>
     <form>
         <!-- Name -->
-        <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="John Doe">
-        </div>
+        <div class="col-lg-9">
+            <div class="form-group col-lg-3">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="John Doe">
+            </div>
+            <!-- picture -->
+            <div class="form-group col-lg-3">
+                <label for="exampleInputPassword1">Add a link to your picture!</label>
+                <input type="picture" class="form-control" id="pic-link" placeholder="Example link">
+            </div>
 
-        <!-- picture -->
-        <div class="form-group">
-            <label for="exampleInputPassword1">Add a link to your picture!</label>
-            <input type="picture" class="form-control" id="exampleInputPassword1" placeholder="Example link">
-        </div>
-
-        <!-- Survey -->
-
-        <!--Submit Button-->
-        <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- Survey -->
+            <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+            <select class="custom-select col-lg-2" id="question1">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+            <select class="custom-select col-lg-2" id="question2">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+            <select class="custom-select col-lg-2" id="question3">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>You rarely do something just out of sheer curiosity.
+            </h5>
+            <select class="custom-select col-lg-2" id="question4">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>People can rarely upset you.</h5>
+            <select class="custom-select col-lg-2" id="question5">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+            <select class="custom-select col-lg-2" id="question6">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+            <select class="custom-select col-lg-2" id="question7">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>You rarely get carried away by fantasies and ideas.
+            </h5>
+            <select class="custom-select col-lg-2" id="question8">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                not.</h5>
+            <select class="custom-select col-lg-2" id="question9">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h5>You feel more energetic after spending time with a group of people.</h5>
+            <select class="custom-select col-lg-2" id="question10">
+                <option selected>Select an Option...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <!--Submit Button-->
+            <br><br>
+            <button type="submit" class="btn btn-primary" id="submit-btn" data-toggle="modal"
+                data-toggle="#modal">Submit</button>
     </form>
+    </div>
+
+    <div id="bestFriendModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class= "modal-content">
+                <div class="modal-header">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-body">
+                    <div id="bestFriend"></div>
+                    <img id="bestFriendPhoto" src = "#">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submit-btn").on("click", function (event) {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#pic-link").val().trim(),
+                scores: [
+                    $("#question1").val().trim(),
+                    $("#question2").val().trim(),
+                    $("#question3").val().trim(),
+                    $("#question4").val().trim(),
+                    $("#question5").val().trim(),
+                    $("#question6").val().trim(),
+                    $("#question7").val().trim(),
+                    $("#question8").val().trim(),
+                    $("#question9").val().trim(),
+                    $("#question10").val().trim()
+                ]
+            };
+
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newFriend, function (data) {
+                $("#bestFriend").text(data.name);
+                $("#bestFriendPhoto").attr("src", data.photo);
+                $("#bestFriendModal").modal("toggle");
+            });
+        });
+
+
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends">API Friends List Link</a>
+        </div>
+    </footer>
+
 </body>
-<!--<div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
-        <label class="form-check-label" for="inlineRadio1">1</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
-        <label class="form-check-label" for="inlineRadio2">2</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
-        <label class="form-check-label" for="inlineRadio3">3</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
-        <label class="form-check-label" for="inlineRadio4">4</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">
-        <label class="form-check-label" for="inlineRadio5">5</label>
-    </div>
--->
