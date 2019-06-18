@@ -4,7 +4,8 @@
     "description": "helps you discover new friends",
     "main": "server.js",
     "dependencies": {
-      "express": "^4.16.3"
+      "express": "^4.16.3",
+      "node": "10.15.1"
     },
     "devDependencies": {},
     "scripts": {
@@ -12,9 +13,6 @@
       "start": "node server.js",
       "watch": "nodemon server.js"
     },
-      "engines": {
-        "node": "10.15.1"
-      },
     "author": "",
     "license": "ISC"
   }
